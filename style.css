@@ -1,0 +1,1057 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  width: 100%;
+}
+.burger_menu{
+  display: none;
+  width: 100%;
+  height: 100px;
+  background-image: url(img/footer-fon.png);
+  opacity: 90%;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+#check-menu{
+  display: none;
+}
+
+.lblogo{
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 10;
+  line-height: 40px;
+  color: rgb(12, 3, 61);
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-burger{
+  width: 150px;
+}
+
+.burger-line{
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  height: 2px;
+  width: 35px;
+  background-color: white;
+  transition: 0.5s;
+}
+.two, .three{
+  top: 50px;
+}
+
+.four{
+  top: 60px;
+}
+
+.main-menu{
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  max-height: 0;
+  font-size: 0;
+  transform: translateY(100%);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.prty{
+  width: 100%;
+  padding: 10px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  background-image: url(img/footer-fon.png);
+  opacity: 90%;
+  border-top: 1px solid rgba(255, 255, 255, .3);
+  font-size: 20px;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
+.prty:hover{
+  background-color: #f36500ea;
+}
+#check-menu:checked ~ .main-menu{
+  font-size: 16px;
+  max-height: 600px;
+}
+#check-menu:checked ~ .one{
+  display: none;
+}
+#check-menu:checked ~ .four{
+  display: none;
+}
+#check-menu:checked ~ .two{
+  transform:rotate(45deg)
+}
+#check-menu:checked ~ .three{
+  transform:rotate(-45deg)
+}
+
+
+header {
+  border: 2px solid rgba(0, 0, 255, 0);
+  width: 100%;
+  background-image: url(img/header-fon.png);
+  background-position: center;
+  background-size: cover;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header_navigation {
+  border: 3px solid rgba(255, 0, 0, 0);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 159px;
+}
+
+.h_logo {
+  border: 2px solid rgba(255, 255, 0, 0);
+  width: 200px;
+  height: 96px;
+  margin-top: 20px;
+  margin-left: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.h_menu {
+  border: 2px solid rgba(255, 255, 0, 0);
+  width: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.spysok {
+  border: 2px solid rgba(205, 92, 92, 0);
+  width: 55%;
+  height: 34px;
+  margin-top: 48px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 150px;
+
+}
+.spysok1 a {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 22px;
+}
+.spysok1 + .spysok1{
+  margin-left: 15px;
+}
+li :hover{
+ color: #fb5535;
+}
+
+.h_social{
+  border: 2px solid rgba(255, 255, 0, 0);
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  margin-right: 200px;
+}
+.h_twitter{
+  border: 2px solid rgba(0, 128, 0, 0);
+  height: 30px;
+  margin-top: 48px;
+  margin-right: 10px;
+}
+.h_youtube{
+  border: 2px solid rgba(0, 128, 0, 0);
+  height: 30px;
+  margin-top: 48px;
+  margin-right: 10px;
+}
+.h_facebook{
+  border: 2px solid rgba(0, 128, 0, 0);
+  height: 30px;
+  margin-top: 48px;
+}
+
+.header_presentation{
+  border: 2px solid rgba(85, 6, 85, 0);
+  width: 100%;
+}
+.h_title{
+  border: 3px solid rgba(255, 192, 203, 0);
+  width: 100%;
+  color: white;
+  font-size: 90px;
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+  margin-top: 80px;
+}
+
+.h_ornament{
+  border: 2px solid rgba(222, 184, 135, 0);
+  display: flex;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+.h_buttons{
+  border: 2px solid rgba(0, 195, 255, 0);
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 200px;
+}
+.h_button_table{
+  width: 228px;
+  height: 57px;
+  background:rgba(251,82,49,0.6);
+  color: white;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 10px;
+}
+.h_button_call{
+  width: 228px;
+  height: 57px;
+  border: 1px solid #b4b4b3;
+  background: #b4b4b379;
+  color: white;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.article{
+  width: 100%;
+  float: left;
+  background-image: linear-gradient(to top left, rgba(128, 128, 128, 0.300), rgba(255, 255, 255, 0)), url(img/article-fon.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 115px;
+}
+
+.a_title{
+  border: 2px solid rgba(0, 128, 0, 0);
+  font-size: 44px;
+  color: rgba(251, 82, 49, 255);
+  font-family: 'Marck Script', cursive;
+  margin-top: 120px;
+}
+.a_ornament{
+  border: 2px solid rgba(0, 128, 128, 0);
+  margin-top: 10px;
+}
+.a_text{
+  border: 2px solid rgba(216, 191, 216, 0);
+  font-size: 26px;
+  color: rgba(76, 76, 76, 255);
+  text-align: center;
+  font-family: 'Zen Kurenaido', sans-serif;
+  line-height: 25px;
+  margin-top: 32px;
+}
+
+.a_foto_signature{
+  border: 2px solid rgba(128, 128, 128, 0);
+  margin-top: 43px;
+}
+
+.dish_ingredients{
+  border: 2px solid rgba(76, 0, 130, 0);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.dish{
+  border: 2px solid rgba(128, 128, 128, 0);
+  width: 36%;
+  margin-top: 203px;
+  margin-bottom: 136px;
+}
+.ingredients{
+  border: 2px solid rgba(128, 128, 128, 0);
+  width: 35%;
+  background-image: url(img/di_ingredients-fon.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.di_title{
+  border: 2px solid rgba(128, 128, 128, 0);
+  color: white;
+  font-size: 38px;
+  font-family: 'Marck Script', cursive;
+  text-align: center;
+}
+.di_ornament{
+  border: 2px solid rgba(128, 128, 128, 0);
+  margin-top: 8px;
+}
+
+.di_text{
+  border: 2px solid rgba(128, 128, 128, 0);
+  color: white;
+  font-size: 22px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 15px;
+}
+.di_foto_ingridients{
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.di_foto{
+  border: 5px solid #cf6e61d0;
+  border-radius: 100%;
+  width: 113px;
+  height: 113px;
+}
+
+.di_foto + .di_foto {
+  margin-left: 34px;
+}
+
+.di_foto img {
+  border-radius: 100%;
+}
+
+.menu-blue {
+  width: 100%;
+  float: left;
+  border: 2px solid rgba(0, 255, 255, 0);
+  background-image: url(img/menu-fon.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.one-group{
+  border: 2px solid rgba(165, 42, 42, 0);
+  width: 40%;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.m_appetisers{
+  width: 100%;
+  border: 2px solid rgba(172, 255, 47, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.m_title-appetisers{
+  border: 2px solid rgba(238, 130, 238, 0);
+  color: white;
+  font-size: 38px;
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+}
+.m_ornament{
+  border: 2px solid rgba(255, 68, 0, 0);
+  margin-top: 9px;
+}
+.m_dish_tzatsiki{
+  width: 66%;
+}
+.m_dish_aubergine_salad{
+  width: 66%;
+}
+.m_dish_aubergine_toast{
+  width: 66%;
+}
+.m_dish_salads{
+  width: 66%;
+}
+.m_dish_haloumi{
+  width: 66%;
+}
+
+.m_name_price{
+  width: 100%;
+  border: 2px solid rgba(0, 128, 0, 0);
+  display: flex;
+  font-family: 'Zen Kurenaido', sans-serif;
+  flex-direction: row;
+}
+.m_name{
+  width: 85%;
+  border: 2px solid rgba(255, 166, 0, 0);
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  font-family: 'Zen Kurenaido', sans-serif;
+  margin-top: 5px;
+}
+.m_price{
+  width: 15%;
+  border: 2px solid rgba(255, 166, 0, 0);
+  color: white;
+  font-size: 30px;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+.m_ingredients{
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid rgba(190, 27, 5, 0);
+  color: white;
+  font-size: 20px;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+.m_salads{
+  border: 2px solid rgba(172, 255, 47, 0);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.m_title-salads{
+  border: 2px solid rgba(238, 130, 238, 0);
+  color: white;
+  font-size: 38px;
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+}
+
+.two-group{
+  border: 2px solid rgba(151, 6, 30, 0);
+  width: 40%;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.m_starters{
+  width: 100%;
+  border: 2px solid rgba(172, 255, 47, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.m_title-starters{
+  border: 2px solid rgba(238, 130, 238, 0);
+  color: white;
+  font-size: 38px;
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+}
+.m_main_dishes{
+  width: 100%;
+  border: 2px solid rgba(172, 255, 47, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.m_title-main_dishes{
+  border: 2px solid rgba(238, 130, 238, 0);
+  color: white;
+  font-size: 38px;
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+}
+
+.review{
+  width: 100%;
+  border: 2px solid rgba(128, 128, 128, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.r_sushi{
+  border: 2px solid rgba(128, 128, 128, 0);
+  margin-top: 137px;
+}
+.r_title1{
+  border: 2px solid rgba(128, 128, 128, 0);
+  font-size: 36pt;
+  color: rgba(51, 51, 51, 255);
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+  margin-top: 34px;
+}
+.r_ornament{
+  border: 2px solid rgba(128, 128, 128, 0);
+  margin-top: 34px;
+}
+.r_text{
+  width: 60%;
+  border: 2px solid rgba(128, 128, 128, 0);
+  font-size: 25pt;
+  color: rgba(26, 31, 59, 255);
+  font-family: 'Zen Kurenaido', sans-serif;
+  margin-top: 42px;
+  text-align: center;
+}
+.r_title2{
+  border: 2px solid rgba(128, 128, 128, 0);
+  margin-top: 50px;
+  font-size: 40px;
+  color: rgba(26, 31, 59, 255);
+  font-family: 'Marck Script', cursive;
+}
+.r_stars{
+  border: 2px solid rgba(128, 128, 128, 0);
+  margin-top: 19px;
+  margin-bottom: 160px;
+}
+
+.boock_now{
+  border:2px solid rgba(0, 128, 0, 0);
+  width: 100%;
+  float: left;
+  background-image: url(img/book-fon.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.b_foto{
+  width: 35%;
+  border: 2px solid rgba(255, 166, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.b_foto-pie{
+  margin-right: 30px;
+}
+.b_book-informatins{
+  width: 35%;
+  border: 2px solid rgba(255, 166, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.b_title{
+  border: 2px solid rgba(255, 166, 0, 0);
+  font-size: 38px;
+  color: rgba(251, 82, 49, 255);
+  text-align: center;
+  font-family: 'Marck Script', cursive;
+}
+.b_ornament{
+  border: 2px solid rgba(255, 166, 0, 0);
+  margin-top: 8px;
+}
+.b_text{
+  font-size: 22px;
+  color: rgba(76, 76, 76, 255);
+  font-family: 'Zen Kurenaido', sans-serif;
+  text-align: center;
+  line-height: 25px;
+  margin-bottom: 70px;
+}
+.b_inputs{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 2px solid rgba(255, 0, 0, 0);
+}
+.b_button{
+  width: 200px;
+  height: 36px;
+  background-color: #fb5535;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
+.b_name-email{
+  width: 100%;
+  border: 2px solid rgba(255, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.b_name{
+  width: 30%;
+  border: 2px solid rgba(0, 255, 64, 0);
+  margin-right: 100px;
+}
+.b_email{
+  border: 2px solid rgba(0, 255, 64, 0);
+  width: 30%;
+}
+.b_date-number{
+  width: 100%;
+  border: 2px solid rgba(255, 0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.b_date{
+  width: 30%;
+  border: 2px solid rgba(0, 255, 64, 0);
+  margin-right: 100px;
+}
+.b_number{
+  width: 30%;
+  border: 2px solid rgba(0, 255, 64, 0);
+}
+label{
+  font-size: 20px;
+  color: rgba(251, 82, 49, 255);
+  font-weight: bold;
+  text-align: left;
+  font-style: italic;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
+input{
+  width: 100%;
+  height: 36px;
+  color: rgb(128, 128, 128);
+  font-size: 18px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-style: italic;
+  background: rgba(255, 255, 255, 35%);
+  border: 1px solid rgba(128, 128, 128, 50%);
+}
+footer{
+  width: 100%;
+  border: 3px solid rgba(0, 255, 255, 0);
+  float: left;
+  background-image: url(img/footer-fon.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 60px;
+}
+.f_number{
+  border: 2px solid rgba(95, 158, 160, 0);
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.f_text-number{
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(150, 149, 149, 255);
+  text-align: center;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+
+.f_navigation{
+  border: 2px solid rgba(95, 158, 160, 0);
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.f_logo{
+  margin-bottom: 34px;
+}
+.f_menu-social{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 41px;
+}
+
+.f_menu + .f_menu{
+  margin-left: 20px;
+}
+
+.f_menu-social li{
+  border: 1px solid #1a1e36;
+  background-color: #1a1e36;
+  border-radius: 100%;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f_menu-social li:hover{
+  border: 1px solid #fb5535;
+  background-color: #fb5535;
+  border-radius: 100%;
+}
+
+.f_n_text{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-weight: bold;
+  color: rgba(107, 107, 107, 255);
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.f_location{
+  border: 2px solid rgba(95, 158, 160, 0);
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.f_text-location{
+  font-size: 18px;
+  font-weight: bold;
+  color: rgba(150, 149, 149, 255);
+  text-align: center;
+  font-family: 'Zen Kurenaido', sans-serif;
+}
+@media(min-width: 768px) and (max-width:1279px){
+  .header_navigation{
+    display: none;
+  }
+  .burger_menu{
+    display: block;
+  }
+  .prty{
+    opacity: 100%;
+  }
+  .prty:hover{
+    color: #fb5535;
+    background: #e2e9f8;
+  }
+  .h_title{
+    font-size: 80px;
+    margin-top: 120px;
+  }
+  .h_ornament{
+    margin-top: 45px;
+  }
+  .h_buttons{
+    margin-top: 60px;
+    margin-bottom: 120px;
+  }
+  .article{
+    padding-bottom: 95px;
+  }
+  .a_title{
+    margin-top: 95px;
+  }
+  .a_text{
+    margin-top: 50px;
+  }
+  .dish_ingredients{
+    display: flex;
+    justify-content: space-between;
+  }
+  .dish{
+    width: 200px;
+  }
+  .ingredients{
+    width: 50%;
+  }
+  .r_sushi {
+    margin-top: 80px;
+  }
+  .r_stars {
+    margin-bottom: 80px;
+  }
+  .r_text{
+    font-size: 20pt;
+    margin-top: 42px;
+  }
+  .r_title1 {
+    font-size: 30pt;
+  }
+  .r_title2 {
+    margin-top: 30px;
+  }
+  .r_stars {
+    margin-top: 35px;
+  }
+  .b_foto {
+    display: none;
+  }
+  .b_book-informatins{
+    width: 80%;
+  }
+  .b_text{
+    font-size: 30px;
+    line-height: 35px;
+    margin-top: 20px;
+  }
+  .b_inputs{
+    margin-top: 0px;
+  }
+  .b_button{
+    margin-top: 25px;
+  }
+  .f_navigation{
+    width: 40%;
+  }
+  .f_logo img{
+    width: 110%;
+  }
+}
+
+@media(min-width: 0px) and (max-width:767px){
+  .header_navigation{
+    display: none;
+  }
+  .burger_menu{
+    display: block;
+  }
+  .prty{
+    opacity: 100%;
+  }
+  .prty:hover{
+    color: #fb5535;
+    background: #e2e9f8;
+  }
+  .dish{
+    display: none;
+  }
+  .ingredients{
+    width: 100%;
+  }
+  .h_title{
+    font-size: 30px;
+  }
+  .h_buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .h_button_table{
+    width: 171px;
+    height: 42px;
+    margin-right: 0px;
+  }
+  .h_button_call{
+    width: 171px;
+    height: 42px;
+    margin-left: 0px;
+    margin-top: 30px;
+  }
+  .article{
+    padding-bottom: 40px;
+  }
+  .a_title{
+    margin-top: 40px;
+    font-size: 30px;
+  }
+  .a_text{
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .di_title{
+    margin-top: 30px;
+  }
+  .di_text{
+    font-size: 16px;
+  }
+  .di_foto + .di_foto {
+    margin-left: 0px;
+  }
+  .di_foto_ingridients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .menu-blue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .one-group{
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .m_title-appetisers{
+    font-size: 30px;
+  }
+  .m_dish_tzatsiki{
+    width: 90%;
+  }
+  .m_dish_aubergine_salad{
+    width: 90%;
+  }
+  .m_dish_aubergine_toast{
+    width: 90%;
+  }
+  .m_price{
+    font-size: 20px;
+  }
+  .m_title-salads{
+    font-size: 30px;
+  }
+  .m_salads{
+    margin-top: 20px;
+  }
+  .m_dish_salads{
+    width: 90%;
+  }
+  .two-group{
+    width: 90%;
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  .m_main_dishes{
+    margin-top: 30px;
+  }
+  .m_title-starters{
+    font-size: 30px;
+  }
+  .m_dish_haloumi{
+    width: 90%;
+  }
+  .m_title-main_dishes{
+    font-size: 30px;
+  }
+  .m_name{
+    font-size: 18px;
+  }
+  .m_ingredients{
+    font-size: 15px;
+  }
+  .r_sushi{
+    margin-top: 50px;
+  }
+  .r_sushi img{
+    width: 222px;
+  }
+  .r_title1{
+    font-size: 25pt;
+    margin-top: 15px;
+  }
+  .r_ornament{
+    margin-top: 15px;
+  }
+  .r_text{
+    font-size: 17px;
+    margin-top: 25px;
+  }
+  .r_title2{
+  margin-top: 20px;
+  font-size: 22px;
+  }
+  .r_stars{
+    margin-bottom: 50px;
+  }
+  .b_foto{
+    display: none;
+  }
+  .b_book-informatins{
+    width: 90%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .b_title{
+    font-size: 30px;
+  }
+  .b_name-email{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+  }
+  .b_date-number{
+    display: flex;
+    flex-direction: column;
+    margin-right: 0px;
+  }
+  .b_ornament{
+    margin-top: 20px;
+  }
+  .b_text{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+  .b_name, .b_email, .b_date, .b_number{
+    width: 90%;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+  .f_number{
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .f_location{
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .f_navigation{
+    width: 100%;
+  }
+  .f_n_text{
+    margin-bottom: 10px;
+  }
+  .f_social{
+    width: 110%;
+    display: flex;
+    justify-content: center;
+  }
+  .f_logo{
+    margin-bottom: 0px;
+  }
+  .f_menu-social{
+    width: 67%;
+    margin-bottom: 0px;
+  }
+  .f_menu-social li:hover{
+    display: none;
+  }
+}
